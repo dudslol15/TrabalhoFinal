@@ -1,6 +1,8 @@
 # TrabalhoFinal
 Trabalho Final para o UC de Aplicação da Lógica de Programação do Curso Técnico de Desenvolvimento do Senai
 
+Alunos: Eduardo Nienkotter Marcelino e Gabriel Nascimento Pinto
+
 -> Git (commit de todos os integrantes) (peso 1)
 -> Duplas ou Trios (-1 se descumprir)
 -> Usar Canvas (peso 1)
