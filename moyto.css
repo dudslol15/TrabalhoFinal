@@ -1,0 +1,14 @@
+.bak{
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.back{
+    background-color: blueviolet;
+    background-attachment: fixed;
+    background-size: auto;
+    backdrop-filter: inherit;
+}
+body{
+    margin: 0%;
+}
