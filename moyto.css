@@ -4,11 +4,12 @@
 }
 
 .back{
-    background-color: blueviolet;
+    background-color: rgba(11, 28, 177, 0.76);
     background-attachment: fixed;
     background-size: auto;
     backdrop-filter: inherit;
 }
-body{
-    margin: 0%;
+.pilar{
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0);
 }
