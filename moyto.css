@@ -4,7 +4,7 @@
 }
 
 .back{
-    background-color: rgba(11, 28, 177, 0.76);
+    background-color: rgb(48, 139, 224);
     background-attachment: fixed;
     background-size: auto;
     backdrop-filter: inherit;
@@ -12,4 +12,7 @@
 .pilar{
     border-style: none;
     background-color: rgba(255, 255, 255, 0);
+}
+#titulo,#titulo1{
+    text-align: center;
 }
