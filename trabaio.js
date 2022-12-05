@@ -13,6 +13,7 @@ let pgExtra = document.querySelector("#pgExtra")
 let responder = document.querySelector("#responder")
 let saida1 = document.querySelector("#saida1")
 let saida2 = document.querySelector("#saida2")
+let gg = new Audio("./vitoria.mp3")
 
 //Evento de click para quando o botão "Responder" for clicado  
 responder.addEventListener("click", (e) => {
@@ -105,11 +106,10 @@ responder.addEventListener("click", (e) => {
     //Condicional que imprimi nas tela quando todas as perguntas estiverem certas
     if (total === 11){
 
-        tocar()
-
         saida1.innerHTML = `Parabéns!! Você acertou TODAS perguntas!
         Você é muito foda`
         saida2.innerHTML = `Seu prêmio foi de R$${dobro} de reais!!`
+        tocar()
     }
     //Condicional que imprimi na tela quando forem certas de 8 a 10 perguntas
     if (total > 7 && total < 11){
@@ -130,3 +130,6 @@ responder.addEventListener("click", (e) => {
         saida2.innerHTML = `Infelizmente você saiu sem prêmios.`
     }
 })
+function tocar (){
+    gg.play()
+}
