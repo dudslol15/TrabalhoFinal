@@ -1,3 +1,5 @@
+//Canva para a logo do Jogo
+
 let tela = document.querySelector("canvas")
 let pin = tela.getContext("2d")
 

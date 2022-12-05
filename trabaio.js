@@ -1,3 +1,4 @@
+//Puxa as variaveis do HTML
 let pg1 = document.querySelector("#pg1")
 let pg2 = document.querySelector("#pg2")
 let pg3 = document.querySelector("#pg3")
@@ -12,10 +13,11 @@ let pgExtra = document.querySelector("#pgExtra")
 let responder = document.querySelector("#responder")
 let saida1 = document.querySelector("#saida1")
 let saida2 = document.querySelector("#saida2")
-let gg = new Audio("./gg.mp3")
 
+//Evento de click para quando o botão "Responder" for clicado  
 responder.addEventListener("click", (e) => {
 
+    //Variaveis que pegam os valores selecionados no HTML
     let p1 = pg1.value
     let p2 = pg2.value
     let p3 = pg3.value
@@ -28,6 +30,7 @@ responder.addEventListener("click", (e) => {
     let p10 = pg10.value
     let pEx = pgExtra.value
 
+    //Condicionais "If" para definir as respostas certas
     if (p1 === "1942"){
         var r1 = 1
     } else {
@@ -94,15 +97,12 @@ responder.addEventListener("click", (e) => {
         var rEx = 0
     }
 
-    let total = r1 + r2 + r3 + r4 + r5 + r6 + r7 + r8 + r9 + r10 + rEx
-    let mil = total * 1000
-    let dobro = mil * 2
-    let meio = mil / 2
+    let total = r1 + r2 + r3 + r4 + r5 + r6 + r7 + r8 + r9 + r10 + rEx //Variavel que soma e informa o total de respostas certas
+    let mil = total * 1000 //Varaivel que multiplica por mil o número de respostas e define o prêmio
+    let dobro = mil * 2 //Variavel que dobra o prêmio final quando todas as respostas estiverem corretas
+    let meio = mil / 2 //Variavel que dividi o prêmio por 2 quando as respostas certas forem poucas
 
-    function tocar (){
-        gg.play
-    }
-
+    //Condicional que imprimi nas tela quando todas as perguntas estiverem certas
     if (total === 11){
 
         tocar()
@@ -111,16 +111,19 @@ responder.addEventListener("click", (e) => {
         Você é muito foda`
         saida2.innerHTML = `Seu prêmio foi de R$${dobro} de reais!!`
     }
+    //Condicional que imprimi na tela quando forem certas de 8 a 10 perguntas
     if (total > 7 && total < 11){
         saida1.innerHTML = `Parabéns!! Você acertou ${total} perguntas!!!!
         Você é demais`
         saida2.innerHTML = `Seu prêmio foi de R$${mil} de reais!!`
     }
+    //Condicional que imprimi na tela quando forem certas de 4 a 7 perguntas
     if (total < 8 && total > 3){
         saida1.innerHTML = `Você acertou ${total} perguntas!
         Você foi até que bem`
         saida2.innerHTML = `Seu prêmio foi de R$${meio} de reais!!`
     }
+    //Condicional que imprimi na tela quando forem certas menos de 4 perguntas
     if (total < 4){
         saida1.innerHTML = `Você acertou ${total} perguntas...
         Você foi bem mal`
