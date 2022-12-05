@@ -1,7 +1,7 @@
 # TrabalhoFinal
 Trabalho Final para o UC de Aplicação da Lógica de Programação do Curso Técnico de Desenvolvimento do Senai
 
-Alunos: Eduardo Nienkotter Marcelino e Gabriel Nascimento Pinto
+Alunos: Eduardo Nienkotter Marcelino, Gabriel Nascimento Pinto e Kauã Aristides Abreu
 
 -> Git (commit de todos os integrantes) (peso 1)
 -> Duplas ou Trios (-1 se descumprir)
